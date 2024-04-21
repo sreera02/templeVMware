@@ -14,6 +14,9 @@ const createWindow = () => {
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
+    //webPreferences: {
+    //  preload: path.join(__dirname, 'index.js')
+    //}
   });
 
   // and load the index.html of the app.
@@ -45,7 +48,14 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
   }
+  
 });
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+
+const enterbutton = document.querySelector('.form-boxlogin');
+enterbutton.addEventListener('click', ()=> {
+  form-boxlogin.classlist.add('enterbutton');
+});
+
