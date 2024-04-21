@@ -55,7 +55,7 @@ header img {
   color:white;  
   border-radius: 1rem;
   margin: 0 auto;
-  transform: scale(1);
+  /*transform: scale(1);*/
 }
 
 header .centerdiv1 {
@@ -75,6 +75,5 @@ header .centerdiv1 {
   backdrop-filter: blur(20px);
   padding: 30px;
   width: 250px;
-  transform: scale(0);
 }
 
